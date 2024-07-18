@@ -133,7 +133,7 @@ git config core.sshCommand "ssh -i ~/.ssh/key -F /dev/null"
      ```
      git remote set-url origin <YOUR_NEW_REPOSITORY_URL>
      ```
-     Replace **YOUR_NEW_REPOSITORY_URL** with the URL of your new GitHub repository, like **https://github.com/yourusername/yourrepositoryname.git**.
+     Replace **YOUR_NEW_REPOSITORY_URL** with the URL of your new GitHub repository, like **https://github.com/slimboi/reactjs.git**.
 
 ![Screenshot 2024-02-28 at 9 43 51 AM](https://github.com/cloudcore-hub/Kubernetes-DevSecOps-CI-CD-Project/assets/88560609/0e2959bb-d704-4c2e-a84d-4363d0364711)
 
