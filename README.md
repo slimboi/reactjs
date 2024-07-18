@@ -91,80 +91,21 @@ mkdir ~/Desktop/project && cd ~/Desktop/project
 ```
 #### Git Clone the application code and IaC repositories 
 ```
-git clone https://github.com/cloudcore-hub/reactjs-quiz-app.git
+git clone https://github.com/slimboi/reactjs.git
 ```
 ```
-git clone https://github.com/cloudcore-hub/iac_code.git
+git clone https://github.com/slimboi/iac.git
 ```
 ```
-cd iac_code
+cd iac
 git config core.sshCommand "ssh -i ~/.ssh/key -F /dev/null"
 ```
 ```
 cd ..
-cd reactjs-quiz-app
+cd reactjs
 git config core.sshCommand "ssh -i ~/.ssh/key -F /dev/null"
 ```
 ![Screenshot 2024-02-28 at 9 34 55 AM](https://github.com/cloudcore-hub/Kubernetes-DevSecOps-CI-CD-Project/assets/88560609/20b80975-9212-4fe8-95cf-4d1b63317665)
-
-
-#### Connect the repository to your Github
-
-1. **Create a New Repository on GitHub:**
-   - Go to GitHub and sign in.
-   - Go to your profile and open Your repositories
-   - Click the **New** icon in the top-right corner to create new repository.
-
-
-![Screenshot 2024-02-28 at 9 38 08 AM](https://github.com/cloudcore-hub/Kubernetes-DevSecOps-CI-CD-Project/assets/88560609/815b0603-14ab-42fd-9756-3d8484909740)
-
-   - Name your repository **iac**, set it to public or private, and click "Create repository."
-
-![Screenshot 2024-02-28 at 9 40 08 AM](https://github.com/cloudcore-hub/Kubernetes-DevSecOps-CI-CD-Project/assets/88560609/790b34f0-8a92-47dd-992c-b47359884f48)
-
-2. **Change the Remote URL of Your Local Repository:**
-   - Open your terminal and navigate to the root directory of your local repository.
-   - Check the current remote URL with:
-     ```
-     cd iac_code
-     git remote -v
-     ```
-   - Change the remote URL to your newly created repository with:
-     ```
-     git remote set-url origin <YOUR_NEW_REPOSITORY_URL>
-     ```
-     Replace **YOUR_NEW_REPOSITORY_URL** with the URL of your new GitHub repository, like **https://github.com/slimboi/reactjs.git**.
-
-![Screenshot 2024-02-28 at 9 43 51 AM](https://github.com/cloudcore-hub/Kubernetes-DevSecOps-CI-CD-Project/assets/88560609/0e2959bb-d704-4c2e-a84d-4363d0364711)
-
-
-3. **Push Your Code to the New Repository:**
-   - Ensure all your changes are committed. If you have uncommitted changes, add them using:
-     ```
-     git add .
-     ```
-   - Commit the changes with:
-     ```
-     git commit -m "Initial commit"
-     ```
-   - Push the code to your new repository with:
-     ```
-     git push -u origin master
-     ```
-     If your main branch is named differently (e.g., **main**), replace **master** with the correct branch name.
-
-4. **Verify the Push:**
-   - Refresh the GitHub page of your repository to see if the code has been pushed successfully.
-
-5. **Repeat for the second repo:**  
-   - You can name the second repo **reactjs** for simplicity
-
-When done, run the following command in your terminal
-
-```
-git config --global user.name <your github user name>
-git config --global user.email <your github email>
-```
 
 ### Step 2: CREATE AWS Resources
 #### Create an IAM user and generate the AWS Access key
