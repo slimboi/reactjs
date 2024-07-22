@@ -179,10 +179,10 @@ Here, you will see that you got the credentials and also you can download the CS
 ![Screenshot 2024-02-28 at 9 55 10 AM](https://github.com/cloudcore-hub/Kubernetes-DevSecOps-CI-CD-Project/assets/88560609/17093658-686c-457e-8a1d-b4004b7e9986)
 
 
-6. **Repeat 1-5 for app code repository:**
+6. **Repeat 1-5 for reactjs repository:**
 
 #### Create S3 Bucket for Terraform State files 
-Create S3 bucket for the terraform state file. Add the bucket name in the iac_code repo secret. Name: **BUCKET_TF**, Value: **<your-bucket-name>**
+Create S3 bucket for the terraform state file. Add the bucket name in the iac_code repo secret. Name: **BUCKET_TF_STATE**, Value: **<your-bucket-name>**
 
 ![Screenshot 2024-02-28 at 9 58 13 AM](https://github.com/cloudcore-hub/Kubernetes-DevSecOps-CI-CD-Project/assets/88560609/47797825-5ca9-4564-841b-b8a30c77ddac)
 
